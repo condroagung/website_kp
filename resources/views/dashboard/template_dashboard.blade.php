@@ -29,10 +29,13 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index3.html" class="nav-link">Home</a>
+                    <a href="{{ route('dashboard/produk') }}" class="nav-link">Produk</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="{{ route('dashboard/kategori') }}" class="nav-link">Kategori</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">User</a>
                 </li>
             </ul>
 
@@ -62,16 +65,25 @@
                         <i class="fas fa-expand-arrows-alt"></i>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-                        <i class="fas fa-th-large"></i>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="fas fa-user mr-1"></i>
+                        User
                     </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-user mr-1"></i> Profile
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">Log Out</a>
+                    </div>
                 </li>
             </ul>
         </nav>
 
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
-            <a href="index3.html" class="brand-link">
+            <a href="{{ route('dashboard') }}" class="brand-link">
                 <img src="{{asset('template')}}/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Dashboard</span>
             </a>
@@ -88,34 +100,22 @@
 
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <li class="nav-header">LAYANAN</li>
+                        <li class="nav-item">
+                            <a href="{{ route('dashboard/kategori') }}" class="nav-link">
+                                <i class="nav-icon far fa-calendar-alt"></i>
                                 <p>
-                                    Dashboard
-                                    <i class="right fas fa-angle-left"></i>
+                                    Kategori
                                 </p>
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="./index.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Dashboard v1</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./index2.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Dashboard v2</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./index3.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Dashboard v3</p>
-                                    </a>
-                                </li>
-                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('dashboard/produk') }}" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Produk
+                                </p>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -127,12 +127,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Dashboard</h1>
+                            <h1 class="m-0">@yield('crumb')</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Dashboard v1</li>
+                                <li class="breadcrumb-item"><a href="#">@yield('crumb')</a></li>
+                                <li class="breadcrumb-item active">Dashboard</li>
                             </ol>
                         </div>
                     </div>
@@ -141,21 +141,7 @@
 
             <section class="content">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-3 col-6">
-                            <div class="small-box bg-info">
-                                <div class="inner">
-                                    <h3>150</h3>
-
-                                    <p>New Orders</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-bag"></i>
-                                </div>
-                                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    @yield('content')
                 </div>
             </section>
         </div>
@@ -174,6 +160,18 @@
     </script>
     <script src="{{asset('template')}}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="{{asset('template')}}/plugins/chart.js/Chart.min.js"></script>
+    <script src="{{asset('template')}}/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{asset('template')}}/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="{{asset('template')}}/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="{{asset('template')}}/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="{{asset('template')}}/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="{{asset('template')}}/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="{{asset('template')}}/plugins/jszip/jszip.min.js"></script>
+    <script src="{{asset('template')}}/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="{{asset('template')}}/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="{{asset('template')}}/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="{{asset('template')}}/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="{{asset('template')}}/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
     <script src="{{asset('template')}}/plugins/sparklines/sparkline.js"></script>
     <script src="{{asset('template')}}/plugins/jqvmap/jquery.vmap.min.js"></script>
     <script src="{{asset('template')}}/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
@@ -186,6 +184,16 @@
     <script src="{{asset('template')}}/dist/js/adminlte.js"></script>
     <script src="{{asset('template')}}/dist/js/demo.js"></script>
     <script src="{{asset('template')}}/dist/js/pages/dashboard.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example1').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+.navbar-brand {
+    text-decoration: none;
+    color: rgba(248, 173, 28, 1);
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: rgba(248, 173, 28, 1);
+}
+
+a.btn-custom:hover {
+    background-color: red;
+}

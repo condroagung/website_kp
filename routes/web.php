@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,42 +14,45 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+##FRONT END USER##
 Route::view(
-    '/index',
+    '/',
     'home/index',
     [
-        'title' => 'Home',
-        'content' => 'ini adalah page home'
+        'title' => 'Karya Kencana | Home'
     ]
 );
 
 Route::view(
-    '/profile',
-    'home/profile',
+    '/contact',
+    'home/contact',
     [
-        'title' => 'Profile',
-        'content' => 'ini adalah page profile'
+        'title' => 'Karya Kencana | Kontak Kami'
     ]
 );
 
 Route::view(
-    '/template',
-    'template',
+    '/profil',
+    'home/profil',
     [
-        'title' => 'template',
-        'content' => 'ini adalah page profile'
+        'title' => 'Karya Kencana | Profil'
     ]
 );
 
 Route::view(
-    '/dashboard',
-    'dashboard/template_dashboard',
+    '/portofolio',
+    'home/portofolio',
     [
-        'title' => 'Dashboard',
-        'content' => 'ini adalah page profile'
+        'title' => 'Karya Kencana | Portofolio'
     ]
 );
+
+##BACK END##
+Route::get('/dashboard', [Dashboard::class, 'index'])->name('dashboard');
+Route::get('/dashboard/produk', [Dashboard::class, 'product'])->name('dashboard/produk');
+Route::get('/dashboard/kategori', [Dashboard::class, 'category'])->name('dashboard/kategori');
+Route::get('/dashboard/kategori/add', [Dashboard::class, 'add_category'])->name('dashboard/kategori/add');
+Route::post('/dashboard/kategori/insert', [Dashboard::class, 'insert_category'])->name('dashboard/kategori/insert');
+Route::get('/dashboard/kategori/edit/{id_kategori}', [Dashboard::class, 'edit_category']);
+Route::post('/dashboard/kategori/update', [Dashboard::class, 'update_category'])->name('dashboard/kategori/update');
+Route::get('/dashboard/kategori/delete/{id_kategori}', [Dashboard::class, 'delete_category']);

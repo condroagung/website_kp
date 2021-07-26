@@ -1,0 +1,85 @@
+.portofolio {
+    background-image: url("/image/home.jpeg");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 7vh;
+    width: 100%;
+    height: 100%;
+    padding-top: 20vh;
+    padding-bottom: 25vh;
+    margin-bottom: 5vh;
+}
+
+.text-portofolio {
+    text-align: center;
+    color: white;
+}
+
+.text-portofolio p {
+    font-family: "Mali", cursive;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.text-portofolio p:nth-child(2) {
+    margin-top: 5vh;
+}
+
+.content-portofolio {
+    padding-bottom: 8vh;
+}
+
+.subtitle-portofolio {
+    font-family: "Mali", cursive;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .subtitle-portofolio {
+        text-align: center !important;
+    }
+}
+
+.row-title {
+    background-image: linear-gradient(
+        rgba(124, 229, 254, 1),
+        rgba(145, 230, 250, 0)
+    );
+    border-radius: 5px;
+    border: 0.5px solid #d9d9db;
+    width: 75%;
+}
+
+.title_portofolio p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.content-portofolio p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.card-body p {
+    margin-left: 3.7rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.card-body p:nth-child(2) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .card-body p {
+        margin-left: 2rem;
+    }
+}

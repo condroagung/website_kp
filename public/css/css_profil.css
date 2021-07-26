@@ -1,0 +1,107 @@
+.title-profil {
+    margin-top: 80px;
+    padding-top: 20px;
+}
+
+.title-profil p {
+    font-family: "Mali", cursive;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.title-komitmen {
+    background-color: white;
+}
+
+.title-komitmen p {
+    font-family: "Mali", cursive;
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    color: rgba(255, 179, 62, 1);
+}
+
+.profil-2 {
+    background-color: white;
+    margin-bottom: 90px;
+}
+
+.profil-1 {
+    background-color: rgba(243, 243, 243, 1);
+}
+
+.profil-2 {
+    padding-top: 30px;
+}
+
+.komitmen-1 p {
+    font-family: "Lusitana", serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.komitmen-2 p {
+    font-family: "Lusitana", serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+    margin-top: 90px;
+}
+
+.visi-misi-profil p {
+    font-family: "Mali", cursive;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: rgba(255, 179, 62, 1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.visi-misi-content {
+    margin-bottom: 10px;
+    border: 1px solid #cacaca;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: rgba(252, 252, 252, 1);
+}
+
+.visi,
+.misi {
+    font-family: "Quattrocento", serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.detail-visi p {
+    font-family: "Quattrocento", serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 2vh;
+}
+
+.detail-misi p {
+    font-family: "Quattrocento", serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 480px) {
+    .title-profil p {
+        font-family: "Mali", cursive;
+        font-weight: 500;
+        font-size: 48px;
+        text-align: center !important;
+    }
+}
