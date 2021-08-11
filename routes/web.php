@@ -49,7 +49,14 @@ Route::view(
 
 ##BACK END##
 Route::get('/dashboard', [Dashboard::class, 'index'])->name('dashboard');
+#Produk
 Route::get('/dashboard/produk', [Dashboard::class, 'product'])->name('dashboard/produk');
+Route::get('/dashboard/produk/add', [Dashboard::class, 'add_product'])->name('dashboard/produk/add');
+Route::post('/dashboard/produk/insert', [Dashboard::class, 'insert_product'])->name('dashboard/produk/insert');
+Route::get('/dashboard/produk/edit/{id_product}', [Dashboard::class, 'edit_product']);
+Route::post('/dashboard/produk/update', [Dashboard::class, 'update_product'])->name('dashboard/produk/update');
+Route::get('/dashboard/produk/delete/{id_product}', [Dashboard::class, 'delete_product']);
+#Kategori
 Route::get('/dashboard/kategori', [Dashboard::class, 'category'])->name('dashboard/kategori');
 Route::get('/dashboard/kategori/add', [Dashboard::class, 'add_category'])->name('dashboard/kategori/add');
 Route::post('/dashboard/kategori/insert', [Dashboard::class, 'insert_category'])->name('dashboard/kategori/insert');
