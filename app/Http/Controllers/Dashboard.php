@@ -123,6 +123,14 @@ class Dashboard extends Controller
 
     public function update_product()
     {
+        $produk = produk::find(Request()->id_produk);
+        $produk->nama_produk = Request()->nama_produk;
+        $produk->id_kategori = Request()->id_kategori;
+        $produk->jumlah_produk = Request()->jumlah_produk;
+        $produk->harga = Request()->harga;
+        $produk->save();
+
+        return redirect()->route('dashboard/produk')->with('pesan', 'data produk berhasil dirubah');
     }
 
     public function delete_category($id_kategori)
