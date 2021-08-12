@@ -15,7 +15,7 @@
                     <a class="nav-link" href="{{ ('/profil');}}">PROFIL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PRODUK DAN JASA</a>
+                    <a class="nav-link" href="{{ ('/produk');}}">PRODUK DAN JASA</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ ('/portofolio');}}">PORTOFOLIO</a>

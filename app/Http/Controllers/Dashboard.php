@@ -91,7 +91,7 @@ class Dashboard extends Controller
         $produk->jumlah_produk = Request()->jumlah_produk;
         $produk->harga = Request()->harga;
         $file = Request()->gambar_produk;
-        $filename = date('Y/m/d') . rand(1, 10000) . '.' . $file->extension();
+        $filename = "karyaKencana_" . rand(1, 1000000) . '.' . $file->extension();
         $file->move(public_path('product_image'), $filename);
 
         $produk->gambar_produk = $filename;
@@ -109,6 +109,7 @@ class Dashboard extends Controller
     public function edit_product($id_product)
     {
         $data['produk'] = produk::where('id', $id_product)->get();
+        $data['kategori'] = kategori::all();
         return view('dashboard.edit_produk', $data);
     }
 
@@ -123,11 +124,34 @@ class Dashboard extends Controller
 
     public function update_product()
     {
+        Request()->validate([
+            'nama_produk' => 'required',
+            'id_kategori' => 'required',
+            'jumlah_produk' => 'required|numeric',
+            'harga' => 'required|numeric',
+            'gambar_produk' => 'mimes:jpg,jpeg,bmp,png'
+        ], [
+            'nama_produk.required' => 'field harus diisi',
+            'id_kategori.required' => 'field harus diisi',
+            'jumlah_produk.numeric' => 'field harus angka',
+            'jumlah_produk.required' => 'field harus diisi',
+            'harga.required' => 'field harus diisi',
+            'harga.numeric' => 'field harus angka',
+            'gambar_produk.mimes' => 'format gambar harus jpg, jpeg, bmp, png'
+        ]);
         $produk = produk::find(Request()->id_produk);
         $produk->nama_produk = Request()->nama_produk;
         $produk->id_kategori = Request()->id_kategori;
         $produk->jumlah_produk = Request()->jumlah_produk;
         $produk->harga = Request()->harga;
+
+        if (Request()->gambar_produk <> "") {
+            $file = Request()->gambar_produk;
+            $filename = "karyaKencana_" . rand(1, 1000000) . '.' . $file->extension();
+            $file->move(public_path('product_image'), $filename);
+
+            $produk->gambar_produk = $filename;
+        }
         $produk->save();
 
         return redirect()->route('dashboard/produk')->with('pesan', 'data produk berhasil dirubah');

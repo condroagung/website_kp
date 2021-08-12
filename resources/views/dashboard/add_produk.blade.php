@@ -18,7 +18,7 @@ Tambah Produk
     <div class="col-12">
         <label for="inputAddress" class="form-label">Kategori</label>
         <select class="form-control @error('id_kategori') is-invalid @enderror" aria-label="Default select example" name="id_kategori">
-            <option selected>Open this select menu</option>
+            <option>Pilih Kategori</option>
             @foreach ($kategori as $k)
             <option value="{{ $k->id}}">{{ $k->nama_kategori}}</option>
             @endforeach

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard;
+use App\Http\Controllers\Home;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +47,8 @@ Route::view(
         'title' => 'Karya Kencana | Portofolio'
     ]
 );
+Route::get('/produk', [Home::class, 'index'])->name('produk');
+#Route::post('/produk/search', [Home::class, 'search_produk'])->name('produk/search');
 
 ##BACK END##
 Route::get('/dashboard', [Dashboard::class, 'index'])->name('dashboard');
