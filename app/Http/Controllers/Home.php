@@ -38,4 +38,22 @@ class Home extends Controller
             ]
         );
     }
+
+    public function home_berita()
+    {
+        $berita = DB::table('beritas')
+            ->paginate(6);
+
+        if (Request('search')) {
+            $berita = DB::table('beritas')->where('judul', 'like', "%" . request('search') . "%")->orWhere('isi', 'like', "%" . request('search') . "%")->paginate(6);
+        }
+
+        return view(
+            'home/berita',
+            [
+                "title" => "Karya Kencana | Berita",
+                "berita" => $berita
+            ]
+        );
+    }
 }

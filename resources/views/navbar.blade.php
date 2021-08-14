@@ -24,7 +24,7 @@
                     <a class="nav-link" href="{{ ('/contact');}}">KONTAK KAMI</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ ('/contact');}}">BERITA</a>
+                    <a class="nav-link" href="{{ ('/berita');}}">BERITA</a>
                 </li>
             </ul>
         </div>

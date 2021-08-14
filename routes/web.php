@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard;
 use App\Http\Controllers\Home;
+use App\Http\Controllers\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +49,7 @@ Route::view(
     ]
 );
 Route::get('/produk', [Home::class, 'index'])->name('produk');
+Route::get('/berita', [Home::class, 'home_berita'])->name('berita');
 #Route::post('/produk/search', [Home::class, 'search_produk'])->name('produk/search');
 
 ##BACK END##
@@ -66,3 +68,16 @@ Route::post('/dashboard/kategori/insert', [Dashboard::class, 'insert_category'])
 Route::get('/dashboard/kategori/edit/{id_kategori}', [Dashboard::class, 'edit_category']);
 Route::post('/dashboard/kategori/update', [Dashboard::class, 'update_category'])->name('dashboard/kategori/update');
 Route::get('/dashboard/kategori/delete/{id_kategori}', [Dashboard::class, 'delete_category']);
+#Berita
+Route::get('/dashboard/berita', [Dashboard::class, 'berita'])->name('dashboard/berita');
+Route::get('/dashboard/berita/add', [Dashboard::class, 'add_berita'])->name('dashboard/berita/add');
+Route::post('/dashboard/berita/insert', [Dashboard::class, 'insert_berita'])->name('dashboard/berita/insert');
+Route::get('/dashboard/berita/edit/{id_berita}', [Dashboard::class, 'edit_berita']);
+Route::post('/dashboard/berita/update', [Dashboard::class, 'update_berita'])->name('dashboard/berita/update');
+Route::get('/dashboard/berita/delete/{id_berita}', [Dashboard::class, 'delete_berita']);
+
+
+#Auth
+Route::get('/login', [Auth::class, 'index'])->name('login');
+Route::post('/auth', [Auth::class, 'auth'])->name('auth');
+Route::get('/logout', [Auth::class, 'logout'])->name('logout');

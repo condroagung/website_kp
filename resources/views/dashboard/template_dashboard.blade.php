@@ -35,7 +35,7 @@
                     <a href="{{ route('dashboard/kategori') }}" class="nav-link">Kategori</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">User</a>
+                    <a href="{{ route('dashboard/berita') }}" class="nav-link">Berita</a>
                 </li>
             </ul>
 
@@ -76,7 +76,7 @@
                             <i class="fas fa-user mr-1"></i> Profile
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">Log Out</a>
+                        <a href="{{ ('/logout');}}" class="dropdown-item dropdown-footer">Log Out</a>
                     </div>
                 </li>
             </ul>
@@ -103,7 +103,7 @@
                         <li class="nav-header">LAYANAN</li>
                         <li class="nav-item">
                             <a href="{{ route('dashboard/kategori') }}" class="nav-link">
-                                <i class="nav-icon far fa-calendar-alt"></i>
+                                <i class="nav-icon fas fa-clipboard-list"></i>
                                 <p>
                                     Kategori
                                 </p>
@@ -111,9 +111,17 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('dashboard/produk') }}" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
+                                <i class="nav-icon fas fa-laptop"></i>
                                 <p>
                                     Produk
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('dashboard/berita') }}" class="nav-link">
+                                <i class="nav-icon fa fa-search"></i>
+                                <p>
+                                    Berita
                                 </p>
                             </a>
                         </li>
