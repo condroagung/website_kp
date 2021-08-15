@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
         User::create([
             'name' => 'Admin Karya Kencana',
             'email' => 'adminKKencana@gmail.com',
-            'password' => 'ad101dk01k10k1031'
+            'password' => bcrypt('ad101dk01k10k1031')
         ]);
     }
 }
