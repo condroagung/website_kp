@@ -16,10 +16,10 @@
                 <p class="d-flex justify-content-center mt-5" style="font-family: 'Roboto', sans-serif; font-size:20px; font-weight:700; color:white">Quick Link</p>
                 <div class="row row-cols-1 row-cols-md-4 justify-content-center">
                     <ul>
-                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white">Lorem ipsum</li>
-                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white">Lorem ipsum</li>
-                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white">Lorem ipsum</li>
-                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white">Lorem ipsum</li>
+                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white; list-style-type: none">Lorem ipsum</li>
+                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white; list-style-type: none">Lorem ipsum</li>
+                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white; list-style-type: none">Lorem ipsum</li>
+                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white; list-style-type: none">Lorem ipsum</li>
                     </ul>
                 </div>
             </div>
@@ -27,10 +27,10 @@
                 <p class="d-flex justify-content-center mt-5" style="font-family: 'Roboto', sans-serif; font-size:20px; font-weight:700; color:white">Perusahaan</p>
                 <div class="row row-cols-1 row-cols-md-4 justify-content-center">
                     <ul>
-                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white">Lorem ipsum</li>
-                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white">Lorem ipsum</li>
-                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white">Lorem ipsum</li>
-                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white">Lorem ipsum</li>
+                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white; list-style-type: none">Lorem ipsum</li>
+                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white; list-style-type: none">Lorem ipsum</li>
+                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white; list-style-type: none">Lorem ipsum</li>
+                        <li style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:400; color:white; list-style-type: none">Lorem ipsum</li>
                     </ul>
                 </div>
             </div>
@@ -49,5 +49,16 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <p style="font-family: 'Spicy Rice', cursive; color: #ffab28; font-size: 2.25em; margin-top:15vh">Karya Kencana</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <p style="font-family: 'Roboto', sans-serif; font-weight:400; color:white;">All right reserved by karyakencana @2021</p>
+            </div>
+        </div>
+
     </div>
 </footer>

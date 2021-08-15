@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{('/css/css_nav.css')}}">
     <link rel="stylesheet" href="{{('/css/css_produk.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -17,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
     <title>{{ $title }}</title>
 </head>
 
@@ -30,7 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 select-area mt-3">
-                <select class="form-select" aria-label="Default select example" name="cari">
+                <select class="form-select select-group" aria-label="Default select example" name="cari">
                     <option>Pilih Kategori</option>
                     @foreach ($kategori as $k)
                     <option value="{{ $k->id}}">{{ $k->nama_kategori}}</option>
@@ -40,9 +43,9 @@
             <div class="col-md-9 search-area mt-3">
                 <form action="{{ route('produk') }}">
                     @csrf
-                    <div class="input-group mb-5">
+                    <div class="input-group search-text mb-5">
                         <input type="text" class="form-control" placeholder="Cari Produk" name="search">
-                        <button class="btn btn-warning text-white" type="submit" name="form2">Search</button>
+                        <button class="btn btn-warning text-white" type="submit" name="form2"><i class="fas fa-search"></i></button>
                     </div>
             </div>
             </form>
@@ -80,6 +83,7 @@
     </div>
 
     @include('footer')
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

@@ -17,10 +17,24 @@
     outline: none !important;
 }
 
+.select-group {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #b8b8b8;
+    box-sizing: border-box;
+}
+
 .card {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     background: #ffffff;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+}
+
+.search-text {
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #b8b8b8;
+    box-sizing: border-box;
 }
