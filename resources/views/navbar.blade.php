@@ -9,22 +9,28 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ ('/');}}">BERANDA</a>
+                    <a class="nav-link <?php echo $active == "home" ? "active" : "" ?>" href="{{ ('/');}}">BERANDA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ ('/profil');}}">PROFIL</a>
+                    <a class="nav-link <?php echo $active == "profil" ? "active" : "" ?>" href="{{ ('/profil');}}">PROFIL</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link <?php echo $active == "produk" || $active == "jasa" ? "active" : "" ?>" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUK DAN JASA
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ ('/produk');}}">Produk</a></li>
+                        <li><a class="dropdown-item" href="{{ ('/jasa');}}">Jasa</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ ('/produk');}}">PRODUK DAN JASA</a>
+                    <a class="nav-link <?php echo $active == "portofolio" ? "active" : "" ?>" href="{{ ('/portofolio');}}">PORTOFOLIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ ('/portofolio');}}">PORTOFOLIO</a>
+                    <a class="nav-link <?php echo $active == "kontak" ? "active" : "" ?>" href="{{ ('/contact');}}">KONTAK KAMI</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ ('/contact');}}">KONTAK KAMI</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ ('/berita');}}">BERITA</a>
+                    <a class="nav-link <?php echo $active == "berita" ? "active" : "" ?>" href="{{ ('/berita');}}">BERITA</a>
                 </li>
             </ul>
         </div>

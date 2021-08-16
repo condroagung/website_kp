@@ -90,7 +90,7 @@
             </div>
             <div class="row">
                 <div class="col-12 d-flex justify-content-center mt-5">
-                    <a class="btn btn-custom" href="#" role="button" style="border-radius:15px; width:30%; background-color:rgba(255, 171, 40, 1); color:white; font-family: 'Roboto', sans-serif; font-weight:400" onMouseOver="this.style.backgroundColor='rgba(221, 121, 60, 1)'" onMouseOut=" this.style.backgroundColor='rgba(255, 171, 40, 1)'">Lihat Selengkapnya</a>
+                    <a class="btn btn-custom" href="{{ ('/jasa');}}" role="button" style="border-radius:15px; width:30%; background-color:rgba(255, 171, 40, 1); color:white; font-family: 'Roboto', sans-serif; font-weight:400" onMouseOver="this.style.backgroundColor='rgba(221, 121, 60, 1)'" onMouseOut=" this.style.backgroundColor='rgba(255, 171, 40, 1)'">Lihat Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@
                 <div class="col">
                     <div class="p-5 row align-items-center" style="background-image:linear-gradient(rgba(124, 229, 254, 1),rgba(145, 230, 250, 0));box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
                         <div class="col-md-5 d-flex justify-content-center">
-                            <img src="{{('/image/Handphone.png')}}" alt="" class="img-fluid">
+                            <img src="{{('/image/Laptop.png')}}" alt="" class="img-fluid">
                         </div>
                         <div class="col-md-6">
                             <p style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet</p>
@@ -149,7 +149,7 @@
                 <div class="col">
                     <div class="p-5 row align-items-center" style="background-image:linear-gradient(rgba(124, 229, 254, 1),rgba(145, 230, 250, 0));box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
                         <div class="col-md-5 d-flex justify-content-center">
-                            <img src="{{('/image/Handphone.png')}}" alt="" class="img-fluid">
+                            <img src="{{('/image/Laptop.png')}}" alt="" class="img-fluid">
                         </div>
                         <div class="col-md-6">
                             <p style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet</p>
@@ -160,7 +160,7 @@
                 <div class="col">
                     <div class="p-5 row align-items-center" style="background-image:linear-gradient(rgba(124, 229, 254, 1),rgba(145, 230, 250, 0)); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
                         <div class="col-md-5 d-flex justify-content-center">
-                            <img src="{{('/image/Handphone.png')}}" alt="" class="img-fluid">
+                            <img src="{{('/image/Laptop.png')}}" alt="" class="img-fluid">
                         </div>
                         <div class="col-md-6">
                             <p style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet</p>
@@ -171,7 +171,7 @@
             </div>
             <div class="row">
                 <div class="col-12 d-flex justify-content-center mt-5">
-                    <a class="btn btn-custom" href="#" role="button" style="border-radius:15px; width:30%; background-color:rgba(255, 171, 40, 1); color:white; font-family: 'Roboto', sans-serif; font-weight:400" onMouseOver="this.style.backgroundColor='rgba(221, 121, 60, 1)'" onMouseOut=" this.style.backgroundColor='rgba(255, 171, 40, 1)'">Lihat Selengkapnya</a>
+                    <a class="btn btn-custom" href="{{ ('/portofolio');}}" role="button" style="border-radius:15px; width:30%; background-color:rgba(255, 171, 40, 1); color:white; font-family: 'Roboto', sans-serif; font-weight:400" onMouseOver="this.style.backgroundColor='rgba(221, 121, 60, 1)'" onMouseOut=" this.style.backgroundColor='rgba(255, 171, 40, 1)'">Lihat Selengkapnya</a>
                 </div>
             </div>
         </div>

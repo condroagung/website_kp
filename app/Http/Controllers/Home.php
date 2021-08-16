@@ -34,7 +34,8 @@ class Home extends Controller
             [
                 "title" => "Karya Kencana | Produk dan Jasa",
                 "produk" => $produk,
-                "kategori" => kategori::all()
+                "kategori" => kategori::all(),
+                "active" => "produk"
             ]
         );
     }
@@ -52,7 +53,8 @@ class Home extends Controller
             'home/berita',
             [
                 "title" => "Karya Kencana | Berita",
-                "berita" => $berita
+                "berita" => $berita,
+                "active" => "berita"
             ]
         );
     }

@@ -20,3 +20,15 @@
 a.btn-custom:hover {
     background-color: red;
 }
+
+.dropdown-menu {
+    background-color: #3e3e3e;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.active {
+    color: rgba(248, 173, 28, 1);
+}

@@ -21,7 +21,8 @@ Route::view(
     '/',
     'home/index',
     [
-        'title' => 'Karya Kencana | Home'
+        'title' => 'Karya Kencana | Home',
+        'active' => 'home'
     ]
 );
 
@@ -29,7 +30,8 @@ Route::view(
     '/contact',
     'home/contact',
     [
-        'title' => 'Karya Kencana | Kontak Kami'
+        'title' => 'Karya Kencana | Kontak Kami',
+        'active' => 'kontak'
     ]
 );
 
@@ -37,7 +39,8 @@ Route::view(
     '/profil',
     'home/profil',
     [
-        'title' => 'Karya Kencana | Profil'
+        'title' => 'Karya Kencana | Profil',
+        'active' => 'profil'
     ]
 );
 
@@ -45,7 +48,17 @@ Route::view(
     '/portofolio',
     'home/portofolio',
     [
-        'title' => 'Karya Kencana | Portofolio'
+        'title' => 'Karya Kencana | Portofolio',
+        'active' => 'portofolio'
+    ]
+);
+
+Route::view(
+    '/jasa',
+    'home/jasa',
+    [
+        'title' => 'Karya Kencana | Produk dan Jasa',
+        'active' => 'jasa'
     ]
 );
 Route::get('/produk', [Home::class, 'index'])->name('produk');
