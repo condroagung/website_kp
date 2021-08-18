@@ -1,6 +1,5 @@
 .portofolio {
-    background-image: url("/image/home.jpeg");
-    opacity: 0.9;
+    background-image: url("/image/Gambar1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,7 +19,7 @@
 .text-portofolio p {
     font-family: "Mali", cursive;
     font-weight: 500;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .text-portofolio p:nth-child(2) {
@@ -44,9 +43,7 @@
 }
 
 .row-title {
-    background-image: linear-gradient(
-        rgba(124, 229, 254, 1),
-        rgba(145, 230, 250, 0)
+    background-image: linear-gradient(243.86deg, #7CE5FE 46.79%, rgba(145, 230, 250, 0) 134.5%);
     );
     border-radius: 5px;
     border: 0.5px solid #d9d9db;
@@ -81,5 +78,17 @@
 @media (max-width: 768px) {
     .card-body p {
         margin-left: 2rem;
+    }
+
+    .text-portofolio p {
+        font-family: "Mali", cursive;
+        font-weight: 500;
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-body p {
+        margin-left: 1rem !important;
     }
 }

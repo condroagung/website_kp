@@ -90,7 +90,7 @@
             </div>
             <div class="row">
                 <div class="col-12 d-flex justify-content-center mt-5">
-                    <a class="btn btn-custom" href="{{ ('/jasa');}}" role="button" style="border-radius:15px; width:30%; background-color:rgba(255, 171, 40, 1); color:white; font-family: 'Roboto', sans-serif; font-weight:400" onMouseOver="this.style.backgroundColor='rgba(221, 121, 60, 1)'" onMouseOut=" this.style.backgroundColor='rgba(255, 171, 40, 1)'">Lihat Selengkapnya</a>
+                    <a class="btn btn-custom" href="{{ ('/jasa');}}" role="button" style="border-radius:15px; background-color:rgba(255, 171, 40, 1); color:white; font-family: 'Roboto', sans-serif; font-weight:400" onMouseOver="this.style.backgroundColor='rgba(221, 121, 60, 1)'" onMouseOut=" this.style.backgroundColor='rgba(255, 171, 40, 1)'">Lihat Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 g-5">
                 <div class="col">
-                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(rgba(124, 229, 254, 1),rgba(145, 230, 250, 0));box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
+                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(243.86deg, #7CE5FE 46.79%, rgba(145, 230, 250, 0) 134.5%);box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
                         <div class="col-md-5 d-flex justify-content-center">
                             <img src="{{('/image/Handphone.png')}}" alt="" class="img-fluid">
                         </div>
@@ -114,7 +114,7 @@
                     <p class="mt-5 d-flex justify-content-center" style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet</p>
                 </div>
                 <div class="col">
-                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(rgba(124, 229, 254, 1),rgba(145, 230, 250, 0));box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
+                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(243.86deg, #7CE5FE 46.79%, rgba(145, 230, 250, 0) 134.5%);box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
                         <div class="col-md-5 d-flex justify-content-center">
                             <img src="{{('/image/Handphone.png')}}" alt="" class="img-fluid">
                         </div>
@@ -125,7 +125,7 @@
                     <p class="mt-5 d-flex justify-content-center" style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet</p>
                 </div>
                 <div class="col">
-                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(rgba(124, 229, 254, 1),rgba(145, 230, 250, 0)); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
+                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(243.86deg, #7CE5FE 46.79%, rgba(145, 230, 250, 0) 134.5%); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
                         <div class="col-md-5 d-flex justify-content-center">
                             <img src="{{('/image/Handphone.png')}}" alt="" class="img-fluid">
                         </div>
@@ -136,7 +136,7 @@
                     <p class="mt-5 d-flex justify-content-center" style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet</p>
                 </div>
                 <div class="col">
-                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(rgba(124, 229, 254, 1),rgba(145, 230, 250, 0));box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
+                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(243.86deg, #7CE5FE 46.79%, rgba(145, 230, 250, 0) 134.5%);box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
                         <div class="col-md-5 d-flex justify-content-center">
                             <img src="{{('/image/Laptop.png')}}" alt="" class="img-fluid">
                         </div>
@@ -147,7 +147,7 @@
                     <p class="mt-5 d-flex justify-content-center" style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet</p>
                 </div>
                 <div class="col">
-                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(rgba(124, 229, 254, 1),rgba(145, 230, 250, 0));box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
+                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(243.86deg, #7CE5FE 46.79%, rgba(145, 230, 250, 0) 134.5%);box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
                         <div class="col-md-5 d-flex justify-content-center">
                             <img src="{{('/image/Laptop.png')}}" alt="" class="img-fluid">
                         </div>
@@ -158,7 +158,7 @@
                     <p class="mt-5 d-flex justify-content-center" style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet</p>
                 </div>
                 <div class="col">
-                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(rgba(124, 229, 254, 1),rgba(145, 230, 250, 0)); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
+                    <div class="p-5 row align-items-center" style="background-image:linear-gradient(243.86deg, #7CE5FE 46.79%, rgba(145, 230, 250, 0) 134.5%); box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); border-radius: 30px">
                         <div class="col-md-5 d-flex justify-content-center">
                             <img src="{{('/image/Laptop.png')}}" alt="" class="img-fluid">
                         </div>
@@ -171,13 +171,15 @@
             </div>
             <div class="row">
                 <div class="col-12 d-flex justify-content-center mt-5">
-                    <a class="btn btn-custom" href="{{ ('/portofolio');}}" role="button" style="border-radius:15px; width:30%; background-color:rgba(255, 171, 40, 1); color:white; font-family: 'Roboto', sans-serif; font-weight:400" onMouseOver="this.style.backgroundColor='rgba(221, 121, 60, 1)'" onMouseOut=" this.style.backgroundColor='rgba(255, 171, 40, 1)'">Lihat Selengkapnya</a>
+                    <a class="btn btn-custom" href="{{ ('/portofolio');}}" role="button" style="border-radius:15px; background-color:rgba(255, 171, 40, 1); color:white; font-family: 'Roboto', sans-serif; font-weight:400" onMouseOver="this.style.backgroundColor='rgba(221, 121, 60, 1)'" onMouseOut=" this.style.backgroundColor='rgba(255, 171, 40, 1)'">Lihat Selengkapnya</a>
                 </div>
             </div>
         </div>
     </div>
     @include('footer')
+    <script src="{{('/js/navbar.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
