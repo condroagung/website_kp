@@ -27,7 +27,7 @@
                     <p style="font-family: 'Roboto', sans-serif; font-size:24px; color:white; font-weight: 400">One Stop Solution Four Your Bussiness</p>
                 </div>
                 <div class="col-md-6 mt-5">
-                    <img src="{{('/image/ilustrasi1.png')}}" alt="" class="img-fluid">
+                    <img src="{{ url('/image/ilustrasi1.png')}}" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
